@@ -1,0 +1,202 @@
+/* ===== リセット & 基本設定 ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Hiragino Kaku Gothic ProN", "Yu Gothic", sans-serif;
+    line-height: 1.8;
+    color: #2f3e3a;
+    background: linear-gradient(to bottom, #e8f3ef, #ffffff);
+    padding: 0 20px;
+}
+
+/* ===== ヘッダー ===== */
+header {
+    height: 60px;
+}
+
+/* ===== メインタイトル ===== */
+h1 {
+    text-align: center;
+    font-size: 2.4rem;
+    letter-spacing: 0.08em;
+    margin-top: 40px;
+    color: #1f4037;
+}
+
+h1 + h1 {
+    margin-top: 10px;
+    margin-bottom: 60px;
+}
+
+/* ===== セクション共通 ===== */
+soundtrailの説明,
+fee,
+apeal,
+CL {
+    display: block;
+    max-width: 800px;
+    margin: 0 auto 80px;
+    padding: 40px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+/* ===== 見出し ===== */
+h2 {
+    font-size: 1.6rem;
+    margin-bottom: 20px;
+    color: #2c6e5f;
+    text-align: center;
+}
+
+/* ===== テキスト ===== */
+p {
+    font-size: 1rem;
+    margin-bottom: 12px;
+    text-align: center;
+}
+
+/* ===== 料金セクション ===== */
+fee p {
+    font-size: 1.1rem;
+}
+
+fee p:nth-child(odd) {
+    font-weight: bold;
+}
+
+fee p:last-child {
+    margin-top: 20px;
+    color: #d85c5c;
+    font-weight: bold;
+}
+
+/* ===== 有料プラン特典 ===== */
+apeal h1 {
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+}
+
+apeal p {
+    text-align: left;
+    margin-left: 20px;
+}
+
+/* ===== 企業理念 ===== */
+CL p {
+    text-align: left;
+    margin-bottom: 16px;
+}
+
+/* ===== フッター ===== */
+footer {
+    text-align: center;
+    padding: 40px 0;
+    font-size: 0.9rem;
+    color: #7a8f88;
+}
+CL p:first-of-type {
+    white-space: nowrap;
+}
+/* ===== 料金表 ===== */
+.price-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 30px auto 20px;
+    font-size: 1.1rem;
+}
+
+.price-table th,
+.price-table td {
+    padding: 14px 20px;
+    text-align: center;
+}
+
+.price-table thead th {
+    background-color: #2c6e5f;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.price-table tbody tr {
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.price-table tbody tr:last-child {
+    border-bottom: none;
+}
+
+.price-table tbody tr:hover {
+    background-color: #f1f7f5;
+}
+
+/* 無料体験の強調 */
+.free-trial {
+    margin-top: 20px;
+    text-align: center;
+    font-weight: bold;
+    color: #d85c5c;
+}
+.price-table tbody tr:nth-child(3) {
+    background-color: #e8f3ef;
+    font-weight: bold;
+}
+/* ===== Q&A ===== */
+QA {
+    display: block;
+    max-width: 800px;
+    margin: 0 auto 80px;
+    padding: 40px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+.qa-item {
+    margin-bottom: 28px;
+}
+
+.question {
+    font-weight: bold;
+    color: #2c6e5f;
+    margin-bottom: 8px;
+}
+
+.answer {
+    color: #2f3e3a;
+    padding-left: 1em;
+    line-height: 1.7;
+}
+/* ===== Q&A 改行なし ===== */
+.question,
+.answer {
+    white-space: nowrap;
+}
+.answer {
+    letter-spacing: 0.02em;
+    font-size: 0.95rem;
+}
+@media (min-width: 768px) {
+    CL p:first-of-type {
+        white-space: nowrap;
+    }
+}
+CL p:first-of-type {
+    white-space: nowrap;
+    letter-spacing: 0.02em;
+    font-size: 0.95rem;
+}
+@media (min-width: 768px) {
+    .question,
+    .answer {
+        white-space: nowrap;
+    }
+}
+.answer {
+    line-height: 1.7;
+}
